@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'demo'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    serenityVersion = '4.1.12'
+    seleniumVersion = '4.17.0'
+}
+
+dependencies {
+    testImplementation "net.serenity-bdd:serenity-core:$serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-junit:$serenityVersion"
+    testImplementation "junit:junit:4.13.2"
+    testImplementation 'ch.qos.logback:logback-classic:1.4.14'
+    testImplementation "org.seleniumhq.selenium:selenium-java:$seleniumVersion"
+    testImplementation "net.serenity-bdd:serenity-cucumber:$serenityVersion"
+}
+
+test {
+    testLogging {
+        showStandardStreams = true
+    }
+    useJUnit()
+}
