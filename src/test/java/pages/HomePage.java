@@ -8,6 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
+//se aconseja tener variabes estáticas o una clase de selectotes para evitar hardcodear los selectores en los métodos
+
 @DefaultUrl("https://www.thecubicle.com/en-global") // Sitio principal
 public class HomePage extends PageObject {
 

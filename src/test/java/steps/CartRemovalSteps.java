@@ -149,6 +149,8 @@ public class CartRemovalSteps {
         allProductNames = verifiedProducts;
     }
 
+    //este mismo link está hardcodeado en la clase homepage
+
     // Metodo para abrir la página de inicio de TheCubicle
     public void openHomePage() {
         logger.info("\n" + LOG_SEPARATOR);

@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
     features = "src/test/resources/features",  // Ubicacion de archivos .feature
-    glue = "stepdefinitions",                   // Paquete con las definiciones de pasos
+    glue = "stepdefinitions",   
+    tags = "@iya",                // Paquete con las definiciones de pasos
     plugin = {
         "pretty",                               // Salida legible en consola
         "html:target/cucumber-reports.html",    // Reporte HTML

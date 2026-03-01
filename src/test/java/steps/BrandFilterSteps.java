@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.ArrayList;
 
+//Faltan clases Tasks y Questions para seguir el patrón de diseño screen play
+
 /**
  * Escenario de test: Seleccionar una marca aleatoria del dropdown de marcas
  * y verificar que el ordenamiento por orden alfabetico A-Z se aplica correctamente.
